@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="selectors.css">
 </head>
 <body>
     <header>
@@ -17,14 +18,28 @@
         <a href="#">CSS</a>
     </nav>
     <main>
-        <h1>CSS Selectors</h1>
-        <p>Paragraph</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi provident architecto illo cum deleniti ab, laudantium perspiciatis voluptatibus dicta consequatur voluptatum maxime rem sequi ducimus aliquid alias nisi ad.</p>
-        <p>Paragraph 3</p>
+        <h1 id="maintitle">CSS Selectors</h1>
+        <p class="orange bigger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi provident architecto illo cum deleniti ab, laudantium perspiciatis voluptatibus dicta consequatur voluptatum maxime rem sequi ducimus aliquid alias nisi ad.</p>
+        <br>
+        <p class="bigger">Different ways to select items are:</p>
+            <ol>
+                <li>Tag Name - Selects an HTML tag (p{color:red;})</li>
+                <li>ID- Selects one element with a specific ID.(#header{color:blue;})</li>
+                <li>Class - Select elements with the class.(.menu{color: green})</li>
+                <li>Children - Selects an elements inside another element. (div p{color:black;})</li>
+            </ol>
+        <p>Difference between an ID and a Class is that <span class="color">ID</span> is used for one specific element and <span class="color">class</span> can be used for many elements.</p>
+
+        <p>Difference between <span class="color">SPAN</span> and the <span class="color">SPAN</span>  is used for small part of text or an inline item and the <span class="color">DIV</span> is used for a larger section or group of content.</p>
+        <br>
+        <p>Difference between DIV and HEADER, MAIN, or FOOTER is nothing</p>
+        <br>
+        <p>The different ways to select a color are, 
+            <span class="color">color name, RGB, HSL, HEX, HSL</span> </p>
 
     </main>
     <footer>
-        <p>&copy; Prince Astrero, 2026</p>
+        <p class="bigger">&copy; Prince Astrero, 2026</p>
     </footer>
 </body>
 </html>
