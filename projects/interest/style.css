@@ -1,0 +1,20 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: #1a0d07;
+    background-color:#8b6f47;
+    font-size: large;
+}
+
+#need {
+    color:#f5e6c8;
+    font-weight: bold;
+}
+
+.less {
+    color:#921515;
+}
+
+.important{
+    color:#07ecd5;
+    font-weight: bold;
+}
