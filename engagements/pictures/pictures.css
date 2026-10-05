@@ -5,3 +5,8 @@ body{
 footer{
     font-weight: bold;
 }
+
+img{
+    width: 600px;
+    height: auto;
+}
