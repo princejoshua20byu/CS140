@@ -55,6 +55,6 @@ body{
     padding: 10px 30px;
     border-bottom: 5px solid blue;
     margin: 10px 20px 30px 40px;
-    outline:red;
+    outline: 2px solid blue;
     
 }
