@@ -19,13 +19,14 @@
     padding: 10px;
     color: white;
     text-align: center;
+    
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(243, 211, 175);
     overflow: scroll;
-    margin: 0;
+    margin: 50px;
   
     
 }
@@ -62,7 +63,7 @@ main h1{
 
 #absolute{
     position: absolute;
-    top: 200px;
+    top: 420px;
     right: 20px;
 }
 .sunset img{
