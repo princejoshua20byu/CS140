@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <link rel="stylesheet" href="positioning.css">
+     <link rel="stylesheet" href="background.css">
+</head>
+<body>
+    <header>
+        <h1 class="header">Astrero's Web Design Site</h1>
+    </header>
+    <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main id="home">
+        <h1>Positioning</h1>
+        <figure id="floatfig" class="sunset">
+            <img class="img" src="sunset.jpg" alt="Sunset">
+            <figcaption>The Sunset and the Deer</figcaption>
+        </figure>
+
+        
+        <div class="enforcer">
+            <h2>Questions and Answers</h2>
+        
+            <h3>1. What is normal flow in HTML?</h3>
+            <p>Normal flow is the normal order of elements on a webpage.</p>
+
+            <h3>2. What does float do? Why clear the float?</h3>
+            <p>Float moves a picture so text wraps around it. Clear makes content start below the picture.</p>
+
+            <h3>3. What do absolute, fixed, and relative do?</h3>
+            <p>Relative moves a box but keeps its space. Absolute positions a box. Fixed stays in the same place on the screen.</p>
+
+            <h3>4. How can you make navigation buttons for phones?</h3>
+            <p>Use display: block, width: 100%, and padding to make links easier to tap.</p>
+
+            <h3>5. Where can you find videos to review the lesson?</h3>
+            <p>I can watch my teacher's materials or search YouTube for CSS positioning videos.</p>
+        </div>
+
+        <figure id="relative" class="sunset">
+            <img class="img" src="sunset.jpg" alt="Relative">
+            <figcaption>Relative Picture</figcaption>
+        </figure>
+
+        <figure id="fixed" class="sunset">
+            <img class="img" src="sunset.jpg" alt="Fixed">
+            <figcaption>Fixed Picture</figcaption>
+        </figure>
+
+        <figure id="absolute" class="sunset">
+            <img class="img" src="sunset.jpg" alt="Absolute">
+            <figcaption>Absolute Picture</figcaption>
+        </figure>
+    </main>
+    <hr>
+    <footer>
+        <p>&copy; 2026, Prince Astrero</p>
+    </footer>
+</body>
+</html>
