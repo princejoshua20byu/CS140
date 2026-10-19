@@ -1,0 +1,46 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(167, 154, 139);
+    
+    
+}
+
+.parent{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 10px;
+}
+
+.card{
+    border: 1px solid black;
+    box-shadow: 3px 3px 2px rgb(109, 108, 108);
+    text-align: center;
+    background-color: rgb(216, 109, 109);
+    
+}
+
+.uncle{
+     display: grid;
+    grid-template-columns: 300px 300px 100px;
+    gap: 10px;
+}
+
+.kida{
+
+border: 1px solid black;
+text-align: center;
+gap: 10px;
+padding: 10px;
+background-color:burlywood;
+box-shadow: 3px 3px 2px rgb(109, 108, 108);
+}
+
+.kidb{
+
+border: 1px solid black;
+text-align: center;
+gap: 10px;
+padding: 10px;
+background-color: bisque;
+box-shadow: 3px 3px 2px rgb(109, 108, 108);
+}
