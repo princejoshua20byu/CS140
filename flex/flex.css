@@ -27,5 +27,14 @@ body{
     display: flex;
     gap: 10px;
     flex-wrap:wrap;
+
+}
+
+nav {
     
+    background-color: bisque;
+    padding: 15px;
+    word-spacing: 50px;
+    text-align: center;
+   
 }
