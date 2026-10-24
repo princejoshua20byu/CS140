@@ -11,6 +11,7 @@ header{
 
 header h1{
     margin: 0;
+    text-align: center;
 }
 
 nav {
@@ -40,19 +41,21 @@ nav a {
 
 main {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 300px);
     gap: 20px;
     flex: 1;
+    justify-content: start;
 }
 
 main div{
     box-shadow: 2px 5px 10px gray;
     padding: 10px;
     outline: thin solid black;
+    width: 280px;
 }
 
 main img{
-    width: 100%;
+    width: 250px;
     height: auto;
 }
 
