@@ -1,0 +1,107 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: bisque;
+    margin: 0;
+}
+
+html {
+    margin: 0;
+}
+
+header{
+    background-color: rgb(230, 154, 126);
+    text-align: center;
+}
+
+header h1{
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    background-color: blanchedalmond;
+    justify-content: space-around;
+    
+}
+
+nav a {
+    display: block;
+    padding: 5px 20px;
+    background-color: rgb(222, 113, 73);
+    color: white;
+    text-decoration: none;  
+}
+
+.side{
+    width: 25%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mainrow {
+    display: flex;
+}
+
+main {
+    width: 75%;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 250px;
+    overflow: hidden;
+    padding: 10px;
+    margin: 5px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card a{
+    display: block;
+    padding: 10px;
+    background-color: rgb(255, 179, 0);
+    width: 60%;
+    margin: 0 auto 5px auto;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+}
+
+.card h2{
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media print{
+    nav{
+        display: none;
+    }
+
+    .side {
+        display: none;
+    }
+
+    body {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color: white;
+    }
+
+    .card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .container {
+        display: block;
+    }
+
+    
+}
