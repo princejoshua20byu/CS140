@@ -1,0 +1,38 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#schedule {
+    border: 5px solid black;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+#schedule th, #schedule td {
+    border: 5px solid black;
+}
+
+th{
+    background-color: rgb(113, 113, 149);
+    color: white;
+}
+
+td{
+    vertical-align: top;
+}
+
+caption { caption-side: top;
+
+}
+
+tbody tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+#schedule td:nth-child(6) {
+    text-align: right;
+}
+
+#schedule tbody tr:hover {
+    background-color: yellow;
+}

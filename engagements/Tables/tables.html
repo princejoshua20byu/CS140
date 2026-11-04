@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
+    <link rel="stylesheet" href="tables.css">
 </head>
 <body>
     <header>
@@ -21,7 +22,7 @@
     <br>
     <main>
         
-        <table border="1">
+        <table id="schedule">
         <caption>My Class Schedule</caption>
             <thead>
             <tr>
@@ -36,7 +37,7 @@
 
             <tbody>
             <tr>
-                <th colspan ="6" align="center">Fall 2026</th>
+                <th scope="rowgroup" colspan="6">Fall 2026</th>
             </tr>
 
             <tr>
@@ -58,7 +59,7 @@
             </tr>
 
             <tr>
-                <th colspan="6" align="center">Winter 2027</th>
+                <th scope="rowgroup" colspan="6">Winter 2027</th>
             </tr>
 
             <tr>
@@ -82,7 +83,7 @@
 
             <tfoot>
             <tr>
-                <th colspan="5" align="center" scope="row">Total Credits</th>
+                <th colspan="5" scope="row">Total Credits</th>
                 <td>12</td>
             </tr>
             </tfoot>
@@ -91,20 +92,14 @@
         <hr>
 
     <br>
-        <p>1. When do you use a table?
-        I use a table when I need to organize information into rows and columns, like my class schedule. It makes the information easier to read.</p>
+        <p>1. Why don't we use the border attribute?
+        We don't use the border attribute because CSS is better for styling a table. It is easier to change the design using CSS.</p>
 
-        <p>2. When do you not use a table?
-        I do not use a table just to arrange the layout of a webpage. I can use CSS for that instead.</p>
+        <p>2. What is the easiest way to color every other row a different color?
+        The easiest way is to use :nth-child() in CSS. It helps us color every other row without adding a class to each row.</p>
 
-        <p>3. When do you need to do extra work for table accessibility?
-        I need to do extra work when my table has many rows or columns, or when the headers are not easy to understand. I need to make sure screen readers can understand the table.</p>
-
-        <p>4. Which question you asked AI today helped you learn the most, and why?
-        The question about colspan and rowspan helped me learn the most because I understand how to combine cells in my table.</p>
-        
-        <p>5. Did AI ever try to give you more than you asked for, like writing your code? What did you do?
-        Yes, AI sometimes gave me extra information that I did not ask for. I checked my teacher's instructions and only used the information I needed.</p>
+        <p>3. What does the value in the parentheses of your structural pseudo-class mean? Give one other value you could use and which rows it would select.
+        The value inside the parentheses tells CSS which row to select. For example, even selects the 2nd, 4th, and 6th rows. We can also use odd to select the 1st, 3rd, and 5th rows.</p>
 
     </main>
     <br>
