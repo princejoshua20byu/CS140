@@ -1,0 +1,130 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color:#f4f4f4;
+    margin: 0;
+}
+
+header {
+    background-color: #34516B;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+nav {
+    display: flex;
+     justify-content: space-around;
+     background-color: #24384A;
+     padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #55758F;
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie {
+    flex: 3;
+    background-color: white;
+    padding: 20px;
+}
+
+aside {
+    flex: 1;
+    background-color: #E8DCCB;
+    padding: 20px;
+}
+
+footer {
+    background-color: #34516B;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #34516B;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #E8EEF3;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    font-weight: bold;
+    padding: 15px;
+}
+
+@media screen and (max-width: 650px) {
+
+    header {
+        padding: 15px;
+    }
+
+   
+    nav{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 10px;
+        display: flex;
+    }
+
+    .movie {
+        width: auto;
+        padding: 10px;
+        overflow-x: auto;
+    }
+
+    aside {
+        width: auto;
+        order: 2;
+    }
+
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+    caption {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
