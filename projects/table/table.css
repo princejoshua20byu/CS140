@@ -83,6 +83,10 @@ caption {
     padding: 15px;
 }
 
+tbody tr:hover {
+    background-color: #c1d6e4;
+}
+
 @media screen and (max-width: 650px) {
 
     header {
