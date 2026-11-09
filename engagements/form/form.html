@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>Prince Website</h1>
+    </header>
+
+    <main>
+        <form action="formprocessing.html" method="post">
+
+        <div class="form-row">
+        <label for="personname"> Full Name</label>
+        <input id="personname" type="text" name="fullname" placeholder="Full Name">
+        </div>
+
+        <div class="form-row">
+            <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Email">
+        </div>
+
+        <div class="form-row"> 
+            <label for="pass">Password</label>
+        <input id="pass" type="password" name="pass" placeholder="Password">
+        </div>
+
+        <div class="form-row">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        </div>
+
+        <div class="form-row">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+        </div>
+
+        <div class="form-row">
+
+        <p>Choose your hobbies:</p>
+
+        <input type="checkbox" name="hobbies" value="Gaming">
+        <label>Gaming</label>
+
+        <input type="checkbox" name="hobbies" value="Music">
+        <label>Music</label>
+
+        <input type="checkbox" name="hobbies" value="Sports">
+        <label>Sports</label>
+        </div>
+
+        <div class="form-row">
+        <p>Choose your gender:</p>
+
+        <input type="radio" name="gender" value="Male">
+        <label>Male</label>
+
+        <input type="radio" name="gender" value="Female">
+        <label>Female</label>
+        </div>
+
+        <div class="form-row">
+        <label for="country">Choose your country:</label>
+
+        <select id="country" name="country">
+            <option value="">Select Country</option>
+            <option value="Philippines">Philippines</option>
+            <option value="USA">USA</option>
+            <option value="Japan">Japan</option>
+        </select>
+        </div>  
+        <br>
+        <div class="form-row">
+        <label for="message">Your Message:</label>
+
+        <textarea id="message" name="message" rows="5" cols="30"
+            placeholder="Write your message here..."></textarea>
+        </div>
+
+        <div class="form-row">
+        <input type="submit">
+        </div>
+
+        
+
+    </form>
+    <section>
+    <h2>Questions and Answers</h2>
+
+    <h3>1. What does the action attribute do?</h3>
+    <p>
+        The action attribute tells the form where to send the information after the user clicks the submit button.
+    </p>
+
+    <h3>2. What does the method attribute do?</h3>
+    <p>
+        It tells the browser how to send the information from the form. The two common methods
+        are GET and POST.
+    </p>
+
+    <h3>3. What is the difference between POST and GET?</h3>
+    <p>
+        GET is when you can see all the information in the website like when you are reading or searching while POST is for private informations like password and emails.
+    </p>
+
+    <h3>4. How do you fill in a form control with a pre-set
+        value, and how is that different from a placeholder?</h3>
+    <p>
+        A preset value is information already filled in when
+        the page opens. A placeholder can already see the box.
+    </p>
+
+    <ul>
+        <li>Text box: Use value for preset text and placeholder for a hint.</li>
+        <li>Textarea: Put preset text between the opening and closing tags.</li>
+        <li>Select box: Use selected to choose an option by default.</li>
+        <li>Checkbox: Use checked to select it by default.</li>
+        <li>Radio button: Use checked to select an option by default.</li>
+    </ul>
+
+    <h3>5. List all the form controls that HTML5 added.
+        Which ones did you put in your form?</h3>
+    <p>
+        HTML5 added new input types such as email, date,
+        datetime-local, month, number, range, search, tel,
+        time, url, week, and color.
+    </p>
+    <p>
+        In my form, I used email, date, and number.
+        These controls make it easier for users to enter
+        information.
+    </p>
+</section>
+    </main>   
+    <br>
+    <footer>
+        &copy; 2026, Prince Astrero
+    </footer>
+</body>
+</html>
