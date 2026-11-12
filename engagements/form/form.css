@@ -1,0 +1,104 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #F1F4F8;
+    color:#172B4D;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    color: #172B4D;
+    margin-bottom: 25px;
+}
+/* Form */
+form {
+    max-width: 750px;
+    margin: auto;
+}
+.form-row, .check-row {
+    display: flex;
+    margin: 10px 0;
+    gap: 10px;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+legend {
+    color: #172B4D;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+/*colors and design*/
+fieldset{
+    background-color: antiquewhite;
+    border: thin solid black;
+    box-shadow: 3px 3px 3px rgb(99, 98, 98);
+}
+
+.form-row input {
+    padding: 10px;
+    background-color: rgb(253, 225, 237);
+}
+
+.form-row input:focus{
+    background-color: white;
+}
+.form-row input:not([type="submit"]) {
+        padding: 10px;
+        background-color: #F1F4F8;
+        border:1px solid #AAB8CA;
+       
+}
+
+.form-row input[type="submit"] {
+        padding: 10px;
+        background-color:#315A91;
+        border: none;
+        cursor: pointer;
+}
+.form-row input[type="submit"]:hover{
+    background-color: #172B4D;
+}
+
+section{
+    max-width: 750px;
+    margin: 30px auto;
+}
+
+footer {
+    text-align: center;
+    color: #172B4D;
+    margin-top: 30px;
+}
+
+@media ONLY screen AND (max-width: 650px) {
+    body{
+        padding: 10px;
+    }
+   
+    .form-row,.check-row{
+    flex-direction: column;
+    }
+
+    .form-row label {
+        width: 100%;
+        text-align: left;
+    }
+
+    .form-row label[for="country"] {
+        white-space: nowrap;
+        width: max-content;
+        display: inline-block;
+}
+    
+}
