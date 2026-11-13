@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F1F4F8;
+    color: #172B4D;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #172B4D;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #172B4D;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+main {
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+form label {
+    display: inline-block;
+}
+
+.form-row input {
+    padding: 10px;
+    background-color: #F1F4F8;
+}
+
+.form-row input:focus {
+    background-color: white;
+}
+
+.form-row input:not([type="radio"]):not([type="checkbox"]) {
+    padding: 10px;
+    background-color: #F1F4F8;
+    border: 1px solid #AAB8CA;
+}
+.form-row textarea,
+.form-row select {
+    padding: 10px;
+    background-color: #F1F4F8;
+    border: 1px solid #AAB8CA;
+    border-radius: 5px;
+}
+
+fieldset {
+    padding: 15px;
+    border: 1px solid #172B4D;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+button {
+    padding: 10px;
+    background-color: #172B4D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    flex: none;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+form div label {
+    width: 150px;
+}
+
+form div input,
+form div textarea,
+form div select {
+    flex: 1;
+}
+
+fieldset div {
+    justify-content: flex-start;
+}
+
+fieldset div label {
+    width: auto;
+    flex: none;
+}
+
+@media ONLY screen AND (max-width: 650px) {
+    form {
+        flex-direction: column;
+    }
+    
+     form div {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    form div label {
+        width: auto;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    fieldset div {
+    flex-direction: row;
+    align-items: center;
+    }
+
+    fieldset div label {
+        width: auto;
+    }
+}

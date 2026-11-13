@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header>
+        <h1>Student Registration</h1>
+    </header>
+
+    <main>
+        <h2>Register as a Student</h2>
+
+        <form>
+            <div class="form-row">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname">
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-row">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-row">
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+
+            <div class="form-row">
+            <label for="about">About Me:</label>
+            <textarea id="about" name="about" rows="4" cols="30"></textarea>
+            </div>
+
+            <fieldset>
+                <legend>Year Level</legend>
+
+                <div class="form-row">
+                <input type="radio" id="freshman" name="yearlevel" value="Freshman" required>
+                <label for="freshman">Freshman</label>
+                </div>
+
+                <div class="form-row">
+                <input type="radio" id="sophomore" name="yearlevel" value="Sophomore">
+                <label for="sophomore">Sophomore</label>
+                </div>
+
+                <div class="form-row">
+                <input type="radio" id="junior" name="yearlevel" value="Junior">
+                <label for="junior">Junior</label>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Student Interests</legend>
+
+                <div class="form-row">
+                <input type="checkbox" id="sports" name="interests" value="Sports">
+                <label for="sports">Sports</label>
+                </div>
+                
+                <div class="form-row">
+                <input type="checkbox" id="music" name="interests" value="Music">
+                <label for="music">Music</label>
+                </div>
+                
+                <div class="form-row">
+                <input type="checkbox" id="technology" name="interests" value="Technology">
+                <label for="technology">Technology</label>
+                </div>
+
+            </fieldset>
+            <div class="form-row">
+            <label for="course">Choose Your Course:</label>
+
+            <select id="course" name="course">
+                <option value="">Select a Course</option>
+                <option value="IT">Information Technology</option>
+                <option value="Business">Business</option>
+                <option value="Education">Education</option>
+            </select>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 Prince Astrero</p>
+    </footer>
+    
+</body>
+</html>
