@@ -14,10 +14,10 @@
     <main>
         <h2>Register as a Student</h2>
 
-        <form>
+        <form action="formprocessing.html" method="get" id="signup-form">
             <div class="form-row">
                 <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname">
+                <input type="text" id="fullname" name="fullname" required>
             </div>
 
             <div class="form-row">
@@ -97,6 +97,74 @@
     <footer>
         <p>&copy; 2026 Prince Astrero</p>
     </footer>
+
+    <section>
+    <h2>Test the result</h2>
+
+    <h3>1. What happens when you submit the form with an empty email?</h3>
+    <p>The browser tells me to enter my email because it is required.</p>
+
+    <h3>2. What shows up in the Console when you enter your email and password?</h3>
+    <p>My name, email, and password show up in the Console.</p>
+
+    <h3>3. What happened to your fields after submitting the form?</h3>
+    <p>The information stays in the form after I click Register.</p>
+
+    <h3>4. Did the page reload?</h3>
+    <p>No, the page did not reload because event.preventDefault() stopped the form from submitting normally.</p>
+    </section>
+
+
+<section>
+    <h2>Questions and Answers</h2>
+
+    <h3>1. What is JavaScript? How did it get its name?</h3>
+    <p>JavaScript is a programming language used to make websites interactive. It was first called LiveScript, but its name was changed to JavaScript.</p>
+
+    <h3>2. What are the two ways you can run JavaScript?</h3>
+    <p>You can run JavaScript in a web browser or on a server using Node.js.</p>
+
+    <h3>3. What is jQuery? Is it still popular today?</h3>
+    <p>jQuery is a JavaScript library that makes it easier to work with websites. Yes, people still use it, but it is less popular for new projects today.</p>
+
+    <h3>4. What is the most popular front-end JS library today?</h3>
+    <p>React is one of the most popular JavaScript libraries used to build websites and user interfaces.</p>
+
+    <h3>5. How does your code prevent the form from being submitted? Why do we need to prevent it?</h3>
+    <p>My code uses event.preventDefault() to stop the normal form submission. We need it so JavaScript can check and collect the information without reloading the page.</p>
+
+    </section>
+
+
+    <script>
+        document.getElementById('signup-form').addEventListener('submit',function(event) {
+            event.preventDefault();
+            
+
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+           
+
+            if (!email || !password) {
+                alert("Please enter your email and password.");
+                return;  
+            }
+
+
+            const formData = {
+                name: fullname,
+                email: email,
+                password: password,
+            };
+
+            console.log(formData);
+            alert("Form Submitted");
+
+        });
+    </script>
+
+    
     
 </body>
 </html>
