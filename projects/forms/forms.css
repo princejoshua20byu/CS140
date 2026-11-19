@@ -119,6 +119,12 @@ fieldset div label {
     flex: none;
 }
 
+#message {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
 @media ONLY screen AND (max-width: 650px) {
     form {
         flex-direction: column;
