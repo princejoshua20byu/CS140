@@ -7,16 +7,27 @@ document.getElementById('signup-form').addEventListener('submit', function(event
     const password = document.getElementById('password').value;
     
 
-    if (!email || !password) {
-        alert("Please enter your email and password.");
+    if (!fullname || !email || !password) {
+        alert("Please complete all required fields.");
+        return;
+    }
+
+    if (password.length < 8) {
+        alert("Password must be at least 8 characters.");
         return;
     }
 
     const formData = {
         name: fullname,
         email: email,
-        password: password
+        password: password,
+        birthdate: document.getElementById('birthdate').value,
+        about: document.getElementById('about').value,
+        gender: document.querySelector('input[name="gender"]:checked')?.value || "",
+        course: document.getElementById('course').value,
+        remember: document.getElementById('remember').checked
     };
+    
 
     console.log(formData);
 
