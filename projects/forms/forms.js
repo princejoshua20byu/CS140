@@ -5,6 +5,7 @@ document.getElementById('signup-form').addEventListener('submit', function(event
     const fullname = document.getElementById('fullname').value;
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
+    
 
     if (!email || !password) {
         alert("Please enter your email and password.");

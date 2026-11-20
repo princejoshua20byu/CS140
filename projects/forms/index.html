@@ -18,12 +18,12 @@
         <form action="formprocessing.html" method="get" id="signup-form">
             <div class="form-row">
                 <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname" required>
+                <input type="text" id="fullname" name="fullname" placeholder="Last Name, First Name" required>
             </div>
 
             <div class="form-row">
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="email@xxx.com" required>
             </div>
 
             <div class="form-row">
@@ -38,52 +38,27 @@
 
             <div class="form-row">
             <label for="about">About Me:</label>
-            <textarea id="about" name="about" rows="4" cols="30"></textarea>
+            <textarea id="about" name="about" placeholder="Something about you!"></textarea>
             </div>
 
             <fieldset>
-                <legend>Year Level</legend>
+                <legend>Gender</legend>
 
                 <div class="form-row">
-                <input type="radio" id="freshman" name="yearlevel" value="Freshman" required>
-                <label for="freshman">Freshman</label>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
                 </div>
 
                 <div class="form-row">
-                <input type="radio" id="sophomore" name="yearlevel" value="Sophomore">
-                <label for="sophomore">Sophomore</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
                 </div>
-
-                <div class="form-row">
-                <input type="radio" id="junior" name="yearlevel" value="Junior">
-                <label for="junior">Junior</label>
-                </div>
-
             </fieldset>
 
-            <fieldset>
-                <legend>Student Interests</legend>
-
                 <div class="form-row">
-                <input type="checkbox" id="sports" name="interests" value="Sports">
-                <label for="sports">Sports</label>
-                </div>
-                
-                <div class="form-row">
-                <input type="checkbox" id="music" name="interests" value="Music">
-                <label for="music">Music</label>
-                </div>
-                
-                <div class="form-row">
-                <input type="checkbox" id="technology" name="interests" value="Technology">
-                <label for="technology">Technology</label>
-                </div>
+                <label for="course">Choose Your Course:</label>
 
-            </fieldset>
-            <div class="form-row">
-            <label for="course">Choose Your Course:</label>
-
-            <select id="course" name="course">
+            <select id="course" name="course" required>
                 <option value="">Select a Course</option>
                 <option value="IT">Information Technology</option>
                 <option value="Business">Business</option>
@@ -91,7 +66,12 @@
             </select>
             </div>
 
-            <button type="submit">Register</button>
+                <div class="form-row">
+                <input type="checkbox" id="sports" name="interests" value="Sports">
+                <label for="sports">Remember Me</label>
+                </div>
+            
+            <button type="submit">Sign Up</button>
             <p id="message"></p>
         </form>
 
@@ -99,24 +79,6 @@
     <footer>
         <p>&copy; 2026 Prince Astrero</p>
     </footer>
-
-
-<section>
-    <h2>AJAX Questions and Answers</h2>
-
-    <h3>1. What is AJAX?</h3>
-    <p>AJAX is a way for a website to send and receive data without reloading the whole page. In my activity, AJAX gets the response from submit.json and displays the message on my webpage.</p>
-
-    <h3>2. Why do you put your JS Code in a separate file?</h3>
-    <p>I put my JavaScript code in a separate file to keep my HTML organized. It is also easier to read, edit, and fix errors in my JavaScript code.</p>
-
-    <h3>3. How do you use the inspector (DevTools) to debug your JavaScript? How do you find the line number of an error?</h3>
-    <p>I use DevTools by pressing F12 and opening the Console tab. I look for red error messages. I can click an error to find the line number in my JavaScript file and fix the problem. I also use the Network tab to check if submit.json loads correctly.</p>
-
-    <h3>4. Do your form and fields have the same ids that your JavaScript uses? Does the Console show any errors? List your ids, and fix any errors before you submit.</h3>
-    <p>Yes, my form and fields have matching IDs in my HTML and JavaScript. The IDs used in my JavaScript are signup-form, fullname, email, password, and message. I checked the Console and did not see any red JavaScript errors.</p>
-</section>
-
 
 <script src="forms.js"></script>
 </body>

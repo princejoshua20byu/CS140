@@ -1,26 +1,26 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #F1F4F8;
-    color: #172B4D;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #bcc4ce;
+    color: #b6045d;
     margin: 0;
     padding: 20px;
 }
 
 header {
-    background-color: #172B4D;
+    background-color:#240041;
     color: white;
     text-align: center;
     padding: 20px;
-    border-radius: 10px;
 }
 
 footer {
-    background-color: #172B4D;
-    color: white;
+    font-family:monospace;
+    background-color: #dd7052;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px;
     margin-top: 30px;
-    border-radius: 10px;
+    font-size: 14px;
 }
 
 main {
@@ -34,8 +34,8 @@ form {
     gap: 15px;
     background-color: white;
     padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px;
+    border: thin solid black;
 }
 
 h2 {
@@ -61,19 +61,18 @@ form label {
     padding: 10px;
     background-color: #F1F4F8;
     border: 1px solid #AAB8CA;
+    
 }
 .form-row textarea,
 .form-row select {
     padding: 10px;
     background-color: #F1F4F8;
     border: 1px solid #AAB8CA;
-    border-radius: 5px;
 }
 
 fieldset {
     padding: 15px;
     border: 1px solid #172B4D;
-    border-radius: 5px;
 }
 
 legend {
@@ -82,10 +81,9 @@ legend {
 
 button {
     padding: 10px;
-    background-color: #172B4D;
+    background-color: #14294d;
     color: white;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
 
