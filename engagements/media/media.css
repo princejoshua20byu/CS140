@@ -1,0 +1,35 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+iframe {
+    border: 0;
+}
+
+.btn {
+    display: block;
+    padding: 10px;
+    color:aquamarine;
+    background-color: blue;
+    width: 110px;
+    text-align:center;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.btn:hover {
+    background-color: lightblue;
+}
+#image {
+    width: 350px;
+    margin: 30px, 50px;
+    border: thin solid black;
+    box-shadow: 5px 5px 3px rgba (200,200,200,200,50%);
+    transform: rotate(8deg);
+}
+
+#image img{
+    width: 100%;
+}
